@@ -1,0 +1,33 @@
+GET http://localhost:8080/customers/noaddr
+Accept: application/json
+
+###
+
+GET http://localhost:8080/addresses/1
+
+###
+
+POST http://localhost:8080/addresses
+Content-Type: application/json
+
+{
+  "id": 1,
+  "street": "Matznergasse",
+  "city": "Wien"
+}
+
+###
+
+GET http://localhost:8080/salesreps/1
+
+###
+
+POST http://localhost:8080/salesreps
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Michael"
+}
+
+###
